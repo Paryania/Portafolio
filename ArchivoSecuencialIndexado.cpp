@@ -1,10 +1,10 @@
 #include <iostream>
 #include <climits>
-const int PMAX = 20;   //tamaño area datos
+const int PMAX = 20;   //tamaÃ±o area datos
 const int OVER = PMAX + 1; //inicio del overflow
 const int OMAX = 30;  //fin del overflow
 const int n = 4;    //cantidad de datos por bloque
-const int TAM_TAB_IND =5;   //tamaño tabla indices
+const int TAM_TAB_IND =5;   //tamaÃ±o tabla indices
 using namespace std;
 
 
@@ -342,7 +342,7 @@ void Ordenar_Tabla_Indice() {
 			if (TablaIndices[i].clave == 0) continue; 
 			
 			if (TablaIndices[i+1].clave != 0 && TablaIndices[i].clave > TablaIndices[i+1].clave) {
-				// Intercambiar índices
+				// Intercambiar Ã­ndices
 				indice temp = TablaIndices[i];
 				TablaIndices[i] = TablaIndices[i+1];
 				TablaIndices[i+1] = temp;
@@ -373,7 +373,7 @@ void mostrarEstado() {
 		if (TablaDatos[i].clave != 0) {
 			cout << "[" << TablaDatos[i].clave << "," << TablaDatos[i].valor << "] ";
 			if (TablaDatos[i].dir != nullptr) {
-				cout << "->overflow posición: 20";
+				cout << "->overflow posiciÃ³n: 20";
 			}
 		} else {
 			cout << "[Vacio] ";
@@ -498,4 +498,5 @@ int main() {
 	cin>>buscado;
 	}
 	return 0;
+
 }
